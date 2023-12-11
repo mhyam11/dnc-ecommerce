@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Manipulação de DOM</title>
+</head>
+<body>
+    <h1> Manipulando o DOM </h1>
+    <p name="paragrafo"> Estou aprendendo a manipular o DOM utilizando o JS</p>
+    <div id="div1">
+        <p>Java Script é incrível!</p> 
+    </div>
+    <script>
+        var x = window.document.getElementsByTagName('h1')[0]
+        x.style.color = 'red'
+        var y = window.document.getElementsByName ('paragrafo')[0]
+        y.style.backgroundColor = 'blue'
+        window.alert(y.innerText)
+        var z = window.document.getElementById('div1')
+        z.style.textAlign = 'left'
+    </script>
+</body>
+</html>
